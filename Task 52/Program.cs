@@ -14,10 +14,10 @@ void GetAverage(double[,] massive)
     {
         for (int j = 0; j < massive.GetLength(0); j++)
         {
-            average = average + (massive[j,i]/(massive.GetLength(0)));
+            average = average + (massive[j, i] / (massive.GetLength(0)));
         }
-        if (i != massive.GetLength(1)-1) Console.Write($"{(Math.Round(average,1))}; ");
-        else Console.Write($"{(Math.Round(average,1))}.");
+        if (i != massive.GetLength(1) - 1) Console.Write($"{(Math.Round(average, 1))}; ");
+        else Console.Write($"{(Math.Round(average, 1))}.");
         average = 0;
     }
 }
